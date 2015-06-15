@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <ListPreference 
+        android:key="pref_convtype"
+        android:title="@string/convtype_title"
+        android:summary="@string/convtype_summary"
+        android:dialogTitle="@string/convtype_title"
+        android:entries="@array/convtype_keys"
+        android:entryValues="@array/convtype_values"
+        android:defaultValue="@string/convtype_default"/>
+
+</PreferenceScreen>

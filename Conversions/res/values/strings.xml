@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Conversions</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>    
+    <string name="menu_exchangerates">Exchange Rates</string>
+        
+    <string-array name="conversions">
+        <item>Miles to Kilometers</item>
+        <item>Kilometers to Miles</item>
+        <item>Inches to Centimeters</item>
+        <item>Centimeters to Inches</item>
+        <item>Farenheit to Celsius</item>
+        <item>Celsius to Farenheit</item>
+        <item>GBP to USD</item>
+        <item>Euros to USD</item>
+        <item>Yen to USD</item>
+    </string-array>
+        
+    <string-array name="convenglish">
+        <item>Miles to Kilometers</item>
+        <item>Inches to Centimeters</item>
+        <item>Farenheit to Celsius</item>
+        <item>GBP to USD</item>
+        <item>Euros to USD</item>
+        <item>Yen to USD</item>
+    </string-array>
+        
+    <string-array name="convmetric">
+        <item>Kilometers to Miles</item>
+        <item>Centimeters to Inches</item>
+        <item>Celsius to Farenheit</item>
+        <item>GBP to USD</item>
+        <item>Euros to USD</item>
+        <item>Yen to USD</item>
+    </string-array>
+        
+    <string-array name="convcurrency">
+        <item>GBP to USD</item>
+        <item>Euros to USD</item>
+        <item>Yen to USD</item>
+    </string-array>
+        
+    <string name="convtype_title">Conversion Preferences</string>
+    <string name="convtype_summary">Set the conversion list options</string>
+        
+    <string-array name="convtype_keys">
+        <item >All</item>
+        <item >English to Metric</item>
+        <item >Metric to English</item>
+        <item >Currency Only</item>
+    </string-array>
+        
+    <string-array name="convtype_values">
+        <item >0</item>
+        <item >1</item>
+        <item >2</item>
+        <item >3</item>
+    </string-array>
+        
+    <string name="convtype_default">0</string>    
+    <string name="GBPTitle">GBP</string>
+    <string name="EURTitle">EUR</string>
+    <string name="JPYTitle">JPY</string>
+    <string name="ApplyButtonTitle">Apply</string>
+
+</resources>

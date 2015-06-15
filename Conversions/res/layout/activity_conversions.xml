@@ -1,0 +1,143 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:columnCount="1"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.lcram.conversions.ConversionsActivity" >
+
+    <Spinner
+        android:id="@+id/conversionSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/ConversionLabel"
+        android:layout_toRightOf="@+id/ConversionLabel" />
+
+    <TextView
+        android:id="@+id/toLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/fromLabel"
+        android:layout_below="@+id/fromLabel"
+        android:layout_marginTop="35dp"
+        android:text="Result:"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/GBPTitleLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/fromLabel"
+        android:layout_below="@+id/toLabel"
+        android:layout_marginTop="26dp"
+        android:text="GBP"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/ApplyButton"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Apply" />
+
+    <EditText
+        android:id="@+id/JPYRateEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ApplyButton"
+        android:layout_alignLeft="@+id/EURRateEditText"
+        android:layout_alignRight="@+id/conversionSpinner"
+        android:layout_marginBottom="33dp"
+        android:ems="10"
+        android:inputType="numberDecimal" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/EURTitleLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/JPYRateEditText"
+        android:layout_alignLeft="@+id/JPYTitleLabel"
+        android:layout_marginBottom="26dp"
+        android:text="EUR"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/toTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/toLabel"
+        android:layout_alignLeft="@+id/conversionSpinner"
+        android:layout_alignRight="@+id/EURRateEditText"
+        android:layout_alignTop="@+id/toLabel"
+        android:layout_marginLeft="@dimen/test_horizontal_margin"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/ConversionLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="35dp"
+        android:text="Convert:"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/JPYTitleLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/JPYRateEditText"
+        android:layout_alignRight="@+id/GBPTitleLabel"
+        android:text="@string/JPYTitle"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/fromLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/fromEditText"
+        android:layout_alignLeft="@+id/ConversionLabel"
+        android:text="Units"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/EURRateEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/EURTitleLabel"
+        android:layout_alignLeft="@+id/GBPRateEditText"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/GBPRateEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/GBPTitleLabel"
+        android:layout_alignLeft="@+id/fromEditText"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/fromEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/conversionSpinner"
+        android:layout_below="@+id/conversionSpinner"
+        android:layout_marginLeft="@dimen/test_horizontal_margin"
+        android:ems="10"
+        android:inputType="numberSigned|numberDecimal" />
+
+</RelativeLayout>
